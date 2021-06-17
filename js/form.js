@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         try{
             let addressBookData = createAddressBook();
             createAndUpdateStorage(addressBookData);
-            resetForm();
+            window.location.replace('../pages/home.html');
         }catch(e){
             return;
         }
