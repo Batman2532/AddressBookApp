@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             let addressBookData = createAddressBook();
             createAndUpdateStorage(addressBookData);
             window.location.replace('../pages/home.html');
+            resetForm();
         }catch(e){
             return;
         }
@@ -81,3 +82,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
         alert(contactList.toString());
         localStorage.setItem("ContactList",JSON.stringify(contactList));
     }
+
+const resetForm = ()=>{
+    document.querySelector("#name").value = "";
+    document.querySelector('#phone').value = "";
+    document.querySelector('#address').value= "";
+    document.querySelector('#city').value = "Select City";
+    document.querySelector('#state').value= "Select State";
+    document.querySelector('#zip').value= "";
+}
+    
+const cancel = () => {
+    window.location.replace('../pages/home.html');
+}
