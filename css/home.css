@@ -60,6 +60,16 @@ body{
     margin: 0 auto;
     padding-bottom: 25px;
 }
+
+.contact-count{
+    background-color:skyblue;
+    color:#ffffff;
+    border-radius: 42%;
+    font-size:16px;
+    width:26px;
+    text-align:center;
+    display:inLine-block;
+}
  
 .contact-detail-text{
     font: normal normal bold 24px/25px Roboto;
